@@ -144,6 +144,7 @@ input:focus::placeholder{
 }
 .left{
     position: relative;
+    overflow:scroll;
 }
 .left .loc{
     overflow: hidden;
@@ -208,8 +209,8 @@ input:focus::placeholder{
     input{
         position: absolute;
         top: 50%;
-        left: 8%; 
-        width: 260px;
+        left: 7%; 
+        width: 200px;
     }
     input::placeholder{
         font-size: 14px;
@@ -217,10 +218,10 @@ input:focus::placeholder{
     #btn{
         position: absolute;
         top: 50%;
-        left: calc(200px + 26%);
+        left: calc(200px + 10%);
     }  
     .weather{
-        left: 14%;
+        left: 8%;
         top: 20%;
     }
     .card{
@@ -234,7 +235,7 @@ input:focus::placeholder{
     }
 
     .left .loc{
-        font-size: 18px;
+        font-size: 16px;
         position: absolute;
         top: 2%;
         left: 8%;
@@ -275,103 +276,16 @@ input:focus::placeholder{
         background-color:  hsla(0, 6%, 93%, 0.248);
         font-size: 8px;
         border-radius: 20px;
-        padding: 10px 10px 0px 20px;
+        padding: 5px 10px 0px 20px;
         line-height: 280%;
     }
     .icons{
         position: absolute;
-        top: 35%;
+        top: 34%;
         left: 17%;
         /* background-color: white; */
         background-size: cover;
         width: 70px;
         height: 70px;
-    }
-}
-
-@media (max-width:1000px) and (min-width:701){
-
-    input{
-        position: absolute;
-        top: 60%;
-        left: 26%; 
-        width: 260px;
-    }
-    input::placeholder{
-        font-size: 14px;
-    }
-    #btn{
-        position: absolute;
-        top: 6cqmax;
-        left: calc(200px + 37%);
-    }  
-    .weather{
-        left: 28%;
-        top: 20%;
-    }
-    .card{
-        top: 19%;
-        left: 10%;
-        width: 80%;
-        height: 50%;
-        padding: 15px;
-        font-size: 10px;
-
-    }
-
-    .left .loc{
-        font-size: 30px;
-        position: absolute;
-        top: 2%;
-        left: 8%;
-    }
-    
-    .left .temper{
-        position: absolute;
-        font-size: 40px;
-        left: 8%;
-        top: 20%;
-    }
-    .hot{
-        background-image: url('anime/hot.gif');
-        width: 50px;
-        height: 50px;
-        background-size: cover;
-        position: absolute;
-        top: 31%;
-        left: 35%;
-    }
-    .cold{
-        background-image: url('anime/cold.gif');
-        width: 50px;
-        height: 50px;
-        background-size: cover;
-        position: absolute;
-        top: 31%;
-        left: 35%;
-    }
-    .left .date{
-        position: absolute;
-        left: 8%;
-        top: 45%;
-        font-size: 16px;
-    }
-    .right{
-        font-family: "Rubik", sans-serif;
-        font-weight: 500;
-        background-color:  hsla(0, 6%, 93%, 0.248);
-        font-size: 18px;
-        border-radius: 20px;
-        padding: 10px 10px 0px 20px;
-        line-height: 280%;
-    }
-    .icons{
-        position: absolute;
-        top: 49%;
-        left: 17%;
-        /* background-color: white; */
-        background-size: cover;
-        width: 100px;
-        height: 100px;
     }
 }
