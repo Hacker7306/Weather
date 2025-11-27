@@ -14,11 +14,10 @@ font-family: "Rubik", sans-serif; */
 }
 .body{
     min-height: 100vh;
-    /* background-color: rgb(0, 156, 174); */
     background-image: url('image.png');
     background-size: cover;
-    background-repeat: no-repeat;  background-position: center center;
-    background-attachment: fixed;
+    background-repeat: no-repeat;  
+    background-position: center;
     transition: 0.28s;
 }
 input{
@@ -33,6 +32,8 @@ input{
     color: rgb(0, 0, 0);
     padding: 0px 10px;
     background-color: rgb(255, 255, 255);
+    transition: 0.3s;
+
 }
 input::placeholder{
     color: rgb(0, 89, 119);
@@ -47,21 +48,20 @@ input:focus::placeholder{
 }
 .weather{
     position: absolute;
-    font-family: "Inter", sans-serif;
+    font-family: "Lora", serif;
     font-weight: 600;
     top: 10%;
     left: 41%;
     font-size: 80px;
     margin: 0;
     color: rgb(255, 255, 255);
-    transition: 0.5s;
+    transition: 0.6s;
 }
 .result{
     position: absolute;
     top: 20%;
     left: 10%;
     width: 80%;
-    background-image: url('back/1.jpg');
     height: 70%;
 }
 .disable{
@@ -74,17 +74,20 @@ input:focus::placeholder{
     padding: 12px 20px;
     border-radius: 20px;
     border: none;
-    background-color:rgb(41, 41, 41) ;
+    background-color:rgb(32, 32, 32) ;
     font-weight: 700;
     color: rgb(133, 133, 133);
     transition: 0.3s;
-    z-index: 10;
 }
 #btn:hover{
-    background-image: linear-gradient(to top, rgb(255, 224, 163) 1%,rgb(232, 135, 0) 99%);
+    background-image: linear-gradient(to bottom,rgb(10, 26, 255) ,rgb(37, 209, 252));
+    background-size: cover;
+    background-position: center;
+    background-blend-mode:difference;
+    background-repeat: no-repeat;
     color: white;
     scale: 1.02;
-    transition: 0.3s;
+    transition: 0.8s;
 }
 
 #btn:active{
@@ -103,17 +106,13 @@ input:focus::placeholder{
     font-size: 36px;
     color: white;
     position: absolute;
-    transition: 0.5s;
+    transition: 0.6s;
+    font-family: "Lora", serif;
 }
-
-
-
 
 .card{
     position: absolute;
     color: white;
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
     top: 18%;
     left: 10%;
     width: 80%;
@@ -129,64 +128,55 @@ input:focus::placeholder{
 .card::after{
     content: '';
     position: absolute;
-    top: -6px;
-    left: -6px;
+    inset: -10px;
     border-radius: 20px;
     width: 100%;
     height: 100%;
-    padding: 5px;
+    padding: 10px;
     opacity: 0.4;
     z-index: -1;
     border: 2px solid rgb(10, 10, 10);
-    box-shadow: 0px 0px 4px black;
+    box-shadow: 0px 0px 12px black;
     background-color: transparent;
-    filter: blur(2px);
+    filter: blur(3px);
 }
 .left{
-    /* position: relative; */
     display: flex;
     flex-direction: column;
     overflow-x:scroll;
     justify-content: space-evenly;
     padding-left: 25px;
+    
 }
 ::-webkit-scrollbar{
     display: none;
     padding: 1px;
     background-color: transparent;
 }
-
 .left .loc{
+    font-family: "Rubik", sans-serif;
     font-size: 60px;
-    font-weight: 700;
-    /* position: absolute; */
-    /* top: 2%; */
-    /* left: 8%; */
-}
+    font-weight: 800;
 
+}
+.left .smallerloc{
+    font-size: 37px;
+}
+.left .date{
+    font-family: "Lora", serif;
+    font-weight: 700;
+}
 .left .temper{
-    /* position: absolute; */
     font-size: 100px;
-    /* left: 8%; */
-    /* top: 20%; */
+    font-family: "Lora", serif;
 }
 .hot{
-    /* background-image: url('anime/hot.gif'); */
     width: 90px;
     height: 90px;
     background-size: cover;
-    margin-left:25px ;
-    /* position: absolute; */
-    /* top: 18%; */
-    /* left: 110%; */
+    margin-left:30px;
+    
 }
-
-/* .left .date{  */
-    /* position: absolute; */
-    /* left: 8%;
-    top: 55%; */
-
- /* } */
 .right{
     display: flex;
     flex-direction: column;
@@ -197,11 +187,11 @@ input:focus::placeholder{
     padding: 20px 40px;
     justify-content: space-around;
 }
+.right h3{
+    font-family: "Lora", serif;
+    font-weight: 800;
+}
 .icons{
-    /* position: absolute; */
-    /* top: 70%;
-    left: 17%; */
-    /* background-color: white; */
     background-size: cover;
     width: 100px;
     height: 100px;
@@ -210,9 +200,7 @@ input:focus::placeholder{
 
 
 
-
 @media (max-width:700px) and (min-width:300px){
-
     input{
         position: absolute;
         top: 50%;
@@ -236,45 +224,26 @@ input:focus::placeholder{
         left: 10%;
         width: 80%;
         height: 25%;
-    padding: 15px;
-    font-size: 10px;
-
+        padding: 15px;
+        font-size: 10px;
     }
     .left{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    padding-left: 5px;
+        padding-left: 5px;
     }
     .left .loc{
         font-size: 16px;
-        /* position: absolute; */
-        /* top: 2%;
-        left: 8%; */
     } 
-    
      .left .temper{
-        /* position: absolute; */
         font-size: 25px;
-        /* left: 8%;
-        top: 20%; */
     }
     .hot{
-        /* background-image: url('anime/hot.gif'); */
         width: 20px;
         height: 20px;
         background-size: cover;
-    margin-left: 8px ;
-
-        /* position: absolute; */
-        /* top: 26%;
-        left: 40%; */
+        margin-left: 8px ;
     }
 
     .left .date{
-        /* position: absolute; */
-        left: 8%;
-        top: 50%;
         margin: 2px 0px;
     }
     .right{
@@ -283,9 +252,70 @@ input:focus::placeholder{
         border-radius: 12px;
         padding: 5px 10px 0px 20px;
     }
-.icons{
-    margin-left: 10px;
-    width: 40px;
-    height: 40px;
+    .icons{
+        margin-left: 10px;
+        width: 40px;
+        height: 40px;
+    }
 }
-}
+ @media (max-width:1500px) and (min-width:701px){
+    input{
+        position: absolute;
+        top: 50%;
+        left: 30%; 
+        width: 200px;
+    }
+    input::placeholder{
+        font-size: 14px;
+    }
+    #btn{
+        position: absolute;
+        top: 50%;
+        left: calc(200px + 33%);
+    }  
+    .weather{
+        left: 28%;
+        top: 20%;
+    }
+    .card{
+        top: 19%;
+        left: 10%;
+        width: 80%;
+        height: 36%;
+        padding: 15px;
+        font-size: 10px;
+
+    }
+    .left{
+        padding-left: 20px;
+    }
+    .left .loc{
+        font-size: 30px;
+    } 
+    
+     .left .temper{
+        font-size: 40px;
+    }
+    .hot{
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        margin-left: 23px ;
+    }
+
+    .left .date{
+        font-size: 20px;
+        margin: 2px 0px;
+    }
+    .right{
+        font-family: "Rubik", sans-serif;
+        font-size: 16px;
+        border-radius: 12px;
+        padding: 5px 10px 0px 20px;
+    }
+    .icons{
+        margin-left: 10px;
+        width: 60px;
+        height: 60px;
+    }
+} 
