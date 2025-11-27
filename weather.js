@@ -25,7 +25,7 @@ let raining = [];
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday",""];
 const weathercondition = ['Clear', 'Mist', 'Drizzle', 'Sandstorm', 'Fog', 'Drizzle', 'Rain', 'Snowfall', 'Heavy Rain', 'Storm Rain','Cloudy']
 const weathericon = ['anime/clear.gif','anime/mist.gif','anime/drizzle.gif','anime/sand.gif','anime/fog.gif','anime/drizzle1.gif','anime/inter.gif','anime/snow.gif','anime/rain.gif','anime/storm.gif','anime/cloudy.gif']
-const back = ['alto/1.jpg','alto/7.jpg','alto/9.jpg','alto/10.jpg','alto/11.jpg','alto/12.png','alto/13.jpg','alto/14.jpg','alto/15.jpg','alto/16.jpg','alto/17.jpg','alto/18.jpg','alto/19.jpg','alto/20.jpg','alto/21.jpg','alto/22.jpg','alto/23.jpg','alto/24.jpg']
+const back = ['alto/1.jpg','alto/7.jpg','alto/9.jpg','alto/10.jpg','alto/11.jpg','alto/12.png','alto/13.jpg','alto/14.jpg','alto/15.jpg','alto/16.jpg','alto/17.jpg','alto/18.jpg','alto/19.jpg','alto/20.jpg','alto/21.jpg','alto/22.jpg','alto/23.jpg','alto/24.jpg','alto/25.jpg','alto/26.jpg','alto/27.jpg','alto/28.jpg','alto/29.jpg']
 function getloc() {
     fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${city.value}`)
         .then((res) => res.json())
