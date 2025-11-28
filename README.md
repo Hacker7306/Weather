@@ -7,7 +7,7 @@ It uses fetch latitude and longitude data from geocoding api and then these lati
 longitude are given to open-metro api and then respective datas are fetched from the open-
 metro api like :
 
-- Location datas
+- Location data
 - Current temperature
 - Time
 - Weather
